@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pixarray - Array Photo Gallery</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Pix<span>array</span> 🖼️</h1>
+  <p class="tag">A photo gallery powered by arrays</p>
+
+  <div class="card">
+    <div class="bar">
+      <button class="main" id="bAdd">+ Add photos</button>
+      <input type="file" id="fFile" accept="image/*" multiple hidden>
+      <span class="sp"></span>
+      <button id="fAll">All</button>
+      <button id="fFav">♥ Favorites</button>
+    </div>
+    <p class="note" id="msg">Tap a photo to open it. Photos are saved in your browser.</p>
+    <div class="grid" id="grid"></div>
+  </div>
+
+
+
+<div id="lb" hidden>
+  <button id="lbX">✕ Close</button>
+  <img id="lbImg" alt="">
+  <div id="lbCap"></div>
+  <div id="lbCount"></div>
+  <div class="lbBtns">
+    <button id="lbPrev">◀ Prev</button>
+    <button id="lbFav">♡</button>
+    <button id="lbDel">🗑 Delete</button>
+    <button id="lbNext">Next ▶</button>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
